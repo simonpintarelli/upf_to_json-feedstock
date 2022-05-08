@@ -1,5 +1,5 @@
 {% set name = "upf_to_json" %}
-{% set version = "0.9.2" %}
+{% set version = "0.9.5" %}
 
 package:
   name: {{ name|lower }}
@@ -16,11 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python>=3.5
     - pip
   run:
-    - python
-    - six
+    - python>=3.5
 
 test:
   imports:
